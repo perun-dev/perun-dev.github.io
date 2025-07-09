@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Моё резюме — perun.dev</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="typewriter.js"></script>
+    <script defer src="subtitle-typewriter.js"></script>
+    <script defer src="reveal-sections.js"></script>
+  </head>
+  
+  <body>
+    <div class="bg-gif"></div>
+    <div class="main-container">
+      <!-- Новый красивый блок профиля -->
+      <div class="profile-block">
+        <div class="profile-avatar-wrap">
+          <div class="profile-avatar">
+          <img src="assets/images/avatar.jpg" alt="avatar" class="profile-avatar-img">
+        </div>
+      </div>
+      <div class="profile-title-wrap">
+        <h1 class="profile-title animated-gradient">perun.dev</h1>
+        <div class="profile-subtitle">
+          <span id="subtitle-typewriter"></span><span class="subtitle-cursor">_</span>
+        </div>
+      </div>
+      <div class="profile-links">
+        <a href="https://t.me/p33run" target="_blank" rel="noopener" class="profile-link tg">Telegram</a>
+        <a href="https://github.com/perun-dev" target="_blank" rel="noopener" class="profile-link gh">GitHub</a>
+        <a href="https://steamcommunity.com/id/perunttv" target="_blank" rel="noopener" class="profile-link steam">Steam</a>
+      </div>
+    </div>
+    
+    <!-- Навыки -->
+    <section id="skills">
+      <h2>Навыки</h2>
+      <ul>
+        <li>Python (Asyncio, FastAPI, Django, DRF, Celery, Aiogram, Pyrogram)</li>
+        <li>Парсинг сайтов (Selenium, Scrapy, BeautifulSoup)</li>
+        <li>Работа с API (REST, gRPC, Telegram)</li>
+        <li>Автоматизация браузеров и пользовательских действий</li>
+        <li>Интеграция с 1С, МойСклад</li>
+        <li>Обработка Excel/CSV/JSON</li>
+        <li>Микросервисная архитектура, Docker</li>
+        <li>PostgreSQL, SQLite, Alembic</li>
+        <li>Машинное обучение (CatBoost, Scikit-learn, Pandas)</li>
+        <li>Логирование, мониторинг, написание тестов</li>
+        <li>Опыт деплоя и CI/CD (Docker, GitLab CI)</li>
+        <li>Опыт работы с платежными системами, Telegram Payments, криптовалютой</li>
+      </ul>
+    </section>
+
+    <!-- Предложения -->
+    <section id="tasks">
+      <h2>Предложения</h2>
+      <ul>
+        <li>Разработка и автоматизация бизнес-процессов под ключ</li>
+        <li>Создание и поддержка Telegram-ботов и интеграций</li>
+        <li>Парсинг и обработка больших объёмов данных</li>
+        <li>Внедрение ML-аналитики и прогнозирования</li>
+        <li>Интеграция с внешними сервисами и API</li>
+        <li>Оптимизация и автоматизация рутинных задач для бизнеса</li>
+        <li>Совместная разработка проектов</li>
+      </ul>
+    </section>
+
+    <!-- Опыт работы -->
+    <section id="experience">
+      <h2>Проекты</h2>
+
+      <article class="job">
+        <div class="project-title">💸Pay2Win</div>
+        <div class="project-desc">
+          <ul>
+            <li>Сайт по продаже цифровых товаров с поддержкой 105+ категорий</li>
+            <li>Оплата через фиат, криптовалюту, Telegram/Steam авторизация</li>
+            <li>Интеграция с Telegram Bot, Celery, Docker</li>
+          </ul>
+        </div>
+        <div class="project-stack">Django, Telegram Bot (Aiogram), Celery, PostgreSQL, Docker</div>
+      </article>
+
+      <article class="job">
+        <div class="project-title">🥷Shroud BOT</div>
+        <div class="project-desc">
+          <ul>
+            <li>Телеграм-бот с интеграцией 3X-UI</li>
+            <li>Оплата: СБП, карты, Telegram Stars, крипта</li>
+            <li>Еженедельные розыгрыши, автоматизация платежей и уведомлений</li>
+          </ul>
+        </div>
+        <div class="project-stack">FastAPI, Aiogram, Celery, PostgreSQL, Docker, Alembic</div>
+      </article>
+
+      <article class="job">
+        <div class="project-title">🎁Buyer/Parser GIFT</div>
+        <div class="project-desc">
+          <ul>
+            <li>Телеграм-бот и юзербот для поиска и покупки подарков</li>
+            <li>Автоматизация через Pyrogram, фильтрация и обработка данных</li>
+            <li>Логирование, уведомления, работа с API</li>
+          </ul>
+        </div>
+        <div class="project-stack">Asyncio, Pyrogram, Tgcrypto, Loguru</div>
+      </article>
+
+      <article class="job">
+        <div class="project-title">⚙️Автоматизация процессов</div>
+        <div class="project-desc">
+          <ul>
+            <li>Парсинг сайтов, автоматизация браузеров и пользовательских действий</li>
+            <li>Обработка файлов, интеграция с 1С, работа с Excel и JSON</li>
+            <li>Создание отчетов, автоматизация рутинных задач</li>
+          </ul>
+        </div>
+        <div class="project-stack">Selenium, Scrapy, Python, 1C, Pandas, Openpyxl</div>
+      </article>
+
+      <article class="job">
+        <div class="project-title">🏢Корпоративные решения</div>
+        <div class="project-desc">
+          <ul>
+            <li>Микросервисная архитектура, gRPC, Telegram-боты</li>
+            <li>Интеграция с внешними сервисами, работа с бонусами, заказами, пользователями</li>
+            <li>Docker-оркестрация, CI/CD, масштабируемость</li>
+          </ul>
+        </div>
+        <div class="project-stack">FastAPI, gRPC, PostgreSQL, Docker, Celery, Alembic</div>
+      </article>
+
+    </section>
+
+    <!-- ПетПроекты/Прочее -->
+    <section id="projects">
+      <h2>ПетПроекты/Прочее</h2>
+
+      <article class="project">
+        <div class="project-title">🛒Парсеры маркетплейсов</div>
+        <div class="project-desc">
+          Парсинг цен и остатков с Wildberries, Ozon, Яндекс.Маркет, Letu, GA. Автоматизация сбора данных, обновление Excel-отчетов.
+        </div>
+        <div class="project-stack">Selenium, Scrapy, Pandas, Openpyxl</div>
+      </article>
+
+      <article class="project">
+        <div class="project-title">📊ML/Аналитика</div>
+        <div class="project-desc">
+          Анализ чеков и клиентов, прогнозирование продаж, обучение моделей CatBoost, автоматизация ML-пайплайнов.
+        </div>
+        <div class="project-stack">Pandas, CatBoost, Scikit-learn, Matplotlib</div>
+      </article>
+
+      <article class="project">
+        <div class="project-title">📦Ozon Bot</div>
+        <div class="project-desc">
+          Автоматизация работы с Ozon, управление сессиями, обработка cookies, парсинг товаров.
+        </div>
+        <div class="project-stack">Python, Selenium</div>
+      </article>
+
+      <article class="project">
+        <div class="project-title">💹Tinkoff Bot</div>
+        <div class="project-desc">
+          Автоматизация торговли на бирже, работа с API Tinkoff, анализ и логирование сделок, построение торговых стратегий.
+        </div>
+        <div class="project-stack">Python, Tinkoff Invest API, Pandas</div>
+      </article>
+
+      <article class="project">
+        <div class="project-title">📈Конкурентный анализ</div>
+        <div class="project-desc">
+          Сбор и обработка прайс-листов конкурентов, сравнение цен, генерация отчетов, работа с Excel и SQLite.
+        </div>
+        <div class="project-stack">Python, Pandas, Openpyxl, SQLite</div>
+      </article>
+    </section>
+
+
+  </div>
+</body>
+</html>
