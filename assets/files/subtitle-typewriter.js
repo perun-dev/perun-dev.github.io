@@ -1,7 +1,7 @@
 
 // Анимация смены подзаголовка под perun.dev
 (function() {
-  const subtitles = ['Developer', 'Siberia'];
+  const subtitles = ['Developer',  '.absolute', 'Siberia'];
   let idx = 0;
   let i = 0;
   let forward = true;

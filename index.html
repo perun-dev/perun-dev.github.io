@@ -1,39 +1,37 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>perun.dev</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="typewriter.js"></script>
-    <script defer src="subtitle-typewriter.js"></script>
-    <script defer src="reveal-sections.js"></script>
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript" >
-      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-      m[i].l=1*new Date();
-      for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-      k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-      ym(103269330, "init", {
-            clickmap:true,
-            trackLinks:true,
-            accurateTrackBounce:true,
-            webvisor:true
-      });
-    </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/103269330" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-    <!-- /Yandex.Metrika counter -->
-  </head>
-  
-  <body>
-    <div class="bg-gif"></div>
-    <div class="main-container">
-      <!-- Новый красивый блок профиля -->
-      <div class="profile-block">
-        <div class="profile-avatar-wrap">
-          <div class="profile-avatar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>perun.dev</title>
+  <link rel="stylesheet" href="assets/files/style.css">
+  <script defer src="assets/files/typewriter.js"></script>
+  <script defer src="assets/files/subtitle-typewriter.js"></script>
+  <script defer src="assets/files/glass-effects.js"></script>
+  <script defer src="assets/files/mobile-nav.js"></script>
+</head>
+
+<body>
+  <div class="floating-particles">
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+  </div>
+
+  <div class="main-container">
+    <!-- Профиль -->
+    <div id="home" class="profile-block mobile-section active">
+      <div class="profile-avatar-wrap">
+        <div class="profile-avatar">
           <img src="assets/images/avatar.jpg" alt="avatar" class="profile-avatar-img">
         </div>
       </div>
@@ -42,49 +40,145 @@
         <div class="profile-subtitle">
           <span id="subtitle-typewriter"></span><span class="subtitle-cursor">_</span>
         </div>
+        <div class="profile-desc glass-card">
+          <!-- <div class="profile-desc-icon">👨‍💻</div> -->
+          <h3>работаю в команде <span class="highlight">v1b3c0d3rs</span></h3>
+          <p>разрабатываем все, с полного нуля или доделаем за других</p>
+        </div>
       </div>
       <div class="profile-links">
         <a href="https://t.me/p33run" target="_blank" rel="noopener" class="profile-link tg">Telegram</a>
         <a href="https://github.com/perun-dev" target="_blank" rel="noopener" class="profile-link gh">GitHub</a>
-        <a href="https://steamcommunity.com/id/perunttv" target="_blank" rel="noopener" class="profile-link steam">Steam</a>
+        <a href="https://steamcommunity.com/id/perunttv" target="_blank" rel="noopener"
+          class="profile-link steam">Steam</a>
       </div>
     </div>
-    
+
     <!-- Навыки -->
-    <section id="skills">
-      <h2>Навыки</h2>
-      <ul>
-        <li>Python (Asyncio, FastAPI, Django, DRF, Celery, Aiogram, Pyrogram)</li>
-        <li>Парсинг сайтов (Selenium, Scrapy, BeautifulSoup)</li>
-        <li>Работа с API (REST, gRPC, Telegram)</li>
-        <li>Автоматизация браузеров и пользовательских действий</li>
-        <li>Интеграция с 1С, МойСклад</li>
-        <li>Обработка Excel/CSV/JSON</li>
-        <li>Микросервисная архитектура, Docker</li>
-        <li>PostgreSQL, SQLite, Alembic</li>
-        <li>Машинное обучение (CatBoost, Scikit-learn, Pandas)</li>
-        <li>Логирование, мониторинг, написание тестов</li>
-        <li>Опыт деплоя и CI/CD (Docker, GitLab CI)</li>
-        <li>Опыт работы с платежными системами, Telegram Payments, криптовалютой</li>
-      </ul>
+    <section id="skills" class="glass-section mobile-section">
+      <h2>Технологии и навыки</h2>
+
+      <div class="skills-grid">
+        <div class="skill-category glass-card">
+          <h3>🐍 Python & Фреймворки</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Django</span>
+            <span class="skill-tag">FastAPI</span>
+            <span class="skill-tag">Asyncio</span>
+            <span class="skill-tag">SQLAlchemy</span>
+            <span class="skill-tag">Celery</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card">
+          <h3>🤖 Telegram & Боты</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Aiogram</span>
+            <span class="skill-tag">Pyrogram</span>
+            <span class="skill-tag">Telegram API</span>
+            <span class="skill-tag">TgCrypto</span>
+            <span class="skill-tag">Webhooks</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card">
+          <h3>🗄️ Базы данных</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">Redis</span>
+            <span class="skill-tag">SQLite</span>
+            <span class="skill-tag">Alembic</span>
+            <span class="skill-tag">asyncpg</span>
+            <span class="skill-tag">psycopg2</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card">
+          <h3>🕷️ Парсинг & HTTP</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Scrapy</span>
+            <span class="skill-tag">Selenium</span>
+            <span class="skill-tag">httpx</span>
+            <span class="skill-tag">aiohttp</span>
+            <span class="skill-tag">requests</span>
+            <span class="skill-tag">BeautifulSoup</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card">
+          <h3>🔧 DevOps & Инфраструктура</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">CI/CD</span>
+            <span class="skill-tag">GitLab CI</span>
+            <span class="skill-tag">Логирование</span>
+            <span class="skill-tag">Мониторинг</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card">
+          <h3>🔗 Интеграции</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">MoySklad API</span>
+            <span class="skill-tag">1С</span>
+            <span class="skill-tag">REST API</span>
+            <span class="skill-tag">gRPC</span>
+            <span class="skill-tag">Криптография</span>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Предложения -->
-    <section id="tasks">
-      <h2>Предложения</h2>
-      <ul>
-        <li>Разработка и автоматизация бизнес-процессов под ключ</li>
-        <li>Создание и поддержка Telegram-ботов и интеграций</li>
-        <li>Парсинг и обработка больших объёмов данных</li>
-        <li>Внедрение ML-аналитики и прогнозирования</li>
-        <li>Интеграция с внешними сервисами и API</li>
-        <li>Оптимизация и автоматизация рутинных задач для бизнеса</li>
-        <li>Совместная разработка проектов</li>
-      </ul>
+    <!-- Как помогаю бизнесу -->
+    <section id="business" class="glass-section mobile-section">
+      <h2>Как помогаю бизнесу</h2>
+
+      <div class="business-grid">
+        <div class="business-card glass-card">
+          <div class="business-icon">⚡</div>
+          <h3>Автоматизация процессов</h3>
+          <p>Избавляю от рутинных задач через боты, парсеры и интеграции. Автоматическая обработка заказов, уведомления,
+            синхронизация данных.</p>
+        </div>
+
+        <div class="business-card glass-card">
+          <div class="business-icon">🛠️</div>
+          <h3>Разработка под ключ</h3>
+          <p>Сайты, боты, панели управления, интеграции с маркетплейсами и CRM под конкретные задачи вашего бизнеса.</p>
+        </div>
+
+
+        <div class="business-card glass-card">
+          <div class="business-icon">📊</div>
+          <h3>Сбор и анализ данных</h3>
+          <p>Парсинг, агрегация и анализ данных для принятия решений. Автоматические отчеты и аналитика по вашим
+            процессам.</p>
+        </div>
+
+        <div class="business-card glass-card">
+          <div class="business-icon">🚀</div>
+          <h3>Масштабируемые решения</h3>
+          <p>Повышение надежности через асинхронность, очереди, контейнеризацию. Готовые к росту архитектурные решения.
+          </p>
+        </div>
+
+        <div class="business-card glass-card">
+          <div class="business-icon">🔗</div>
+          <h3>Быстрые интеграции</h3>
+          <p>Внедрение новых сервисов и API. Связываю разрозненные системы в единую экосистему для вашего
+            бизнеса.</p>
+        </div>
+
+        <div class="business-card glass-card">
+          <div class="business-icon">💼</div>
+          <h3>Бизнес-интеграции</h3>
+          <p>Подключение к 1С, MoySklad, платежным системам. Полная автоматизация документооборота и учета.</p>
+        </div>
+      </div>
     </section>
 
     <!-- Опыт работы -->
-    <section id="experience">
+    <section id="experience" class="mobile-section">
       <h2>Проекты</h2>
 
       <article class="job">
@@ -146,17 +240,17 @@
         </div>
         <div class="project-stack">FastAPI, gRPC, PostgreSQL, Docker, Celery, Alembic</div>
       </article>
-
     </section>
 
     <!-- ПетПроекты/Прочее -->
-    <section id="projects">
+    <section id="projects" class="mobile-section">
       <h2>ПетПроекты/Прочее</h2>
 
       <article class="project">
         <div class="project-title">🛒Парсеры маркетплейсов</div>
         <div class="project-desc">
-          Парсинг цен и остатков с Wildberries, Ozon, Яндекс.Маркет, Letu, GA. Автоматизация сбора данных, обновление Excel-отчетов.
+          Парсинг цен и остатков с Wildberries, Ozon, Яндекс.Маркет, Letu, GA. Автоматизация сбора данных, обновление
+          Excel-отчетов.
         </div>
         <div class="project-stack">Selenium, Scrapy, Pandas, Openpyxl</div>
       </article>
@@ -178,9 +272,10 @@
       </article>
 
       <article class="project">
-        <div class="project-title">💹Tinkoff Bot</div>
+        <div class="project-title">💹T-Invest Bot</div>
         <div class="project-desc">
-          Автоматизация торговли на бирже, работа с API Tinkoff, анализ и логирование сделок, построение торговых стратегий.
+          Автоматизация торговли на бирже, работа с API Tinkoff, анализ и логирование сделок, построение торговых
+          стратегий.
         </div>
         <div class="project-stack">Python, Tinkoff Invest API, Pandas</div>
       </article>
@@ -194,7 +289,77 @@
       </article>
     </section>
 
-
+    <!-- Процесс работы -->
+    <section id="process" class="glass-section mobile-section">
+      <h2>Как мы работаем</h2>
+      <div class="process-timeline">
+        <div class="process-step glass-card">
+          <div class="step-header">
+            <div class="step-number">01</div>
+            <h3>Анализ задачи</h3>
+          </div>
+          <div class="step-content">
+            <p>Изучаем ваши процессы, определяем точки автоматизации и составляем техническое задание</p>
+          </div>
+        </div>
+        <div class="process-step glass-card">
+          <div class="step-header">
+            <div class="step-number">02</div>
+            <h3>Разработка MVP</h3>
+          </div>
+          <div class="step-content">
+            <p>Создаем минимальную рабочую версию для быстрого тестирования основного функционала</p>
+          </div>
+        </div>
+        <div class="process-step glass-card">
+          <div class="step-header">
+            <div class="step-number">03</div>
+            <h3>Итерации и доработка</h3>
+          </div>
+          <div class="step-content">
+            <p>Дорабатываем решение на основе обратной связи, добавляем новые функции</p>
+          </div>
+        </div>
+        <div class="process-step glass-card">
+          <div class="step-header">
+            <div class="step-number">04</div>
+            <h3>Деплой и поддержка</h3>
+          </div>
+          <div class="step-content">
+            <p>Запускаем в продакшн, настраиваем мониторинг и обеспечиваем техническую поддержку</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
+
+  <!-- Мобильная навигация -->
+  <nav class="mobile-nav">
+    <button class="mobile-nav-btn active" data-section="home">
+      <div class="nav-icon">👤</div>
+      <div class="nav-label">Профиль</div>
+    </button>
+    <button class="mobile-nav-btn" data-section="skills">
+      <div class="nav-icon">🛠️</div>
+      <div class="nav-label">Навыки</div>
+    </button>
+    <button class="mobile-nav-btn" data-section="business">
+      <div class="nav-icon">💼</div>
+      <div class="nav-label">Бизнес</div>
+    </button>
+    <button class="mobile-nav-btn" data-section="experience">
+      <div class="nav-icon">🚀</div>
+      <div class="nav-label">Проекты</div>
+    </button>
+    <button class="mobile-nav-btn" data-section="projects">
+      <div class="nav-icon">🧩</div>
+      <div class="nav-label">Петки</div>
+    </button>
+    <button class="mobile-nav-btn" data-section="process">
+      <div class="nav-icon">📋</div>
+      <div class="nav-label">Процесс</div>
+    </button>
+  </nav>
 </body>
+
 </html>
