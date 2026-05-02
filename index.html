@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>perun.dev</title>
+  <link rel="stylesheet" href="assets/files/style.css">
+  <script defer src="assets/files/typewriter.js"></script>
+  <script defer src="assets/files/subtitle-typewriter.js"></script>
+  <script defer src="assets/files/glass-effects.js"></script>
+  <script defer src="assets/files/mobile-nav.js"></script>
+</head>
+
+<body>
+  <div class="floating-particles">
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+  </div>
+
+  <div class="main-container">
+    <!-- Профиль -->
+    <div id="home" class="profile-block mobile-section active">
+      <div class="profile-avatar-wrap">
+        <div class="profile-avatar">
+          <img src="assets/images/avatar.jpg" alt="avatar" class="profile-avatar-img">
+        </div>
+      </div>
+      <div class="profile-title-wrap">
+        <h1 class="profile-title animated-gradient">perun.dev</h1>
+        <div class="profile-subtitle">
+          <span id="subtitle-typewriter"></span><span class="subtitle-cursor">_</span>
+        </div>
+        <div class="profile-desc glass-card">
+          <h3>Алексей, <span class="highlight">FullStack</span></h3>
+          <span class="level-badge">middle-senior</span>
+          <p>Frontend · Backend · ML · DevOps<br>от интерфейса до деплоя</p>
+        </div>
+      </div>
+      <div class="profile-links">
+        <a href="https://t.me/p33run" target="_blank" rel="noopener" class="profile-link tg">Telegram</a>
+      </div>
+    </div>
+
+    <!-- Навыки -->
+    <section id="skills" class="glass-section mobile-section">
+      <h2>Технологии и навыки</h2>
+
+      <div class="skills-grid">
+        <div class="skill-category glass-card">
+          <h3>🐍 Python & Backend</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Django</span>
+            <span class="skill-tag">FastAPI</span>
+            <span class="skill-tag">SQLAlchemy</span>
+            <span class="skill-tag">Alembic</span>
+            <span class="skill-tag">Pydantic</span>
+            <span class="skill-tag">Celery</span>
+            <span class="skill-tag">gRPC</span>
+            <span class="skill-tag">Asyncio</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card">
+          <h3>🤖 Telegram & Боты</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">aiogram 3</span>
+            <span class="skill-tag">Pyrogram</span>
+            <span class="skill-tag">Telegram Mini App</span>
+            <span class="skill-tag">Broadcast рассылки</span>
+            <span class="skill-tag">Channel management</span>
+            <span class="skill-tag">CryptoBot</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card">
+          <h3>🌐 Frontend</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Next.js 16</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">Tailwind CSS</span>
+            <span class="skill-tag">Redux Toolkit</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card">
+          <h3>🗄️ Базы данных & Хранилища</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">Redis</span>
+            <span class="skill-tag">Meilisearch</span>
+            <span class="skill-tag">S3 / MinIO</span>
+            <span class="skill-tag">SQLite</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card">
+          <h3>🔧 DevOps & Инфраструктура</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Kubernetes</span>
+            <span class="skill-tag">Helm</span>
+            <span class="skill-tag">GitLab CI/CD</span>
+            <span class="skill-tag">Traefik</span>
+            <span class="skill-tag">Prometheus</span>
+            <span class="skill-tag">Grafana</span>
+            <span class="skill-tag">Sentry</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card">
+          <h3>🔗 Интеграции & AI</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">1С (OData/HTTP)</span>
+            <span class="skill-tag">Yookassa</span>
+            <span class="skill-tag">CDEK</span>
+            <span class="skill-tag">Wildberries API</span>
+            <span class="skill-tag">yt-dlp</span>
+            <span class="skill-tag">Whisper</span>
+            <span class="skill-tag">Gemini API</span>
+            <span class="skill-tag">Claude API</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Проекты -->
+    <section id="experience" class="mobile-section">
+      <h2>Проекты</h2>
+
+      <article class="job">
+        <div class="project-title">
+          <div class="project-name">Koreanbutik</div>
+          <a href="https://koreanbutik.ru" target="_blank" rel="noopener" class="project-status project-status-active project-badge-link">работает</a>
+        </div>
+        <div class="project-desc">
+          <ul>
+            <li>E-commerce платформа корейской косметики — 15 FastAPI-микросервисов, gRPC, KrakenD API Gateway</li>
+            <li>Next.js 16 SSR: каталог, корзина, заказы, Stories, SMS-авторизация</li>
+            <li>ML-рекомендации (Market Basket, Item-to-Item, персональные), Meilisearch, MinIO, Celery</li>
+            <li>Kubernetes (Helm, Traefik), GitLab CI/CD, Prometheus + Grafana + Loki + Sentry</li>
+          </ul>
+        </div>
+        <div class="project-stack">FastAPI · Next.js 16 · gRPC · Kubernetes · Redis · ML · TypeScript</div>
+      </article>
+
+      <article class="job">
+        <div class="project-title">
+          <div class="project-name">OneTapRecipe Bot</div>
+          <a href="https://t.me/OneTapRecipe_bot?start=start" target="_blank" rel="noopener" class="project-status project-status-active project-badge-link">работает</a>
+        </div>
+        <div class="project-desc">
+          <ul>
+            <li>Telegram Mini App — рецепты из видео (YouTube, Reels, TikTok, VK) → Whisper → Gemini API/Claude API</li>
+            <li>Подписки (Yookassa), реферальная программа, 3-уровневая квота, SSE-стрим обработки</li>
+          </ul>
+        </div>
+        <div class="project-stack">FastAPI · aiogram 3 · React · Celery · Whisper · Gemini · Claude · Yookassa</div>
+      </article>
+      
+      <article class="job">
+        <div class="project-title">
+          <div class="project-name">KB Portal</div>
+          <span class="project-status project-status-active">работает</span>
+        </div>
+        <div class="project-desc">
+          <ul>
+            <li>Корпоративный портал знаний — статьи, тестирование с переаттестацией</li>
+            <li>Ролевые права (6 групп), экспорт в PDF/DOCX/Excel, финансовая отчётность</li>
+            <li>Доступен только для сотрудников компании</li>
+          </ul>
+        </div>
+        <div class="project-stack">Django · React · MUI · Redux Toolkit · RTK Query · PostgreSQL</div>
+      </article>
+
+
+      <article class="job">
+        <div class="project-title">
+          <div class="project-name">KB Bot</div>
+          <span class="project-status project-status-active">работает</span>
+        </div>
+        <div class="project-desc">
+          <ul>
+            <li>Учёт рабочего времени: отметка смен, 6-уровневая иерархия ролей, Celery-расписания</li>
+            <li>Excel-табели, зарплатные расчёты, синхронизация с 1С и NextCloud</li>
+            <li>Доступен только для сотрудников компании</li>
+          </ul>
+        </div>
+        <div class="project-stack">Django · aiogram 3 · Celery · PostgreSQL · 1С · NextCloud</div>
+      </article>
+
+      <article class="job inactive">
+        <div class="project-title">
+          <div class="project-name">Contest Bot</div>
+          <span class="project-status project-status-active">отключён</span>
+        </div>
+        <div class="project-desc">
+          <ul>
+            <li>Telegram-бот для конкурсов — верификация чеков через 1С и ОФД (ofd.ru, 1-ofd.ru)</li>
+            <li>Управление конкурсами, рассылки, экспорт участников в Excel</li>
+          </ul>
+        </div>
+        <div class="project-stack">Django · aiogram 3 · PostgreSQL · 1С · OFD API</div>
+      </article>
+
+      <article class="job">
+        <div class="project-title">
+          <div class="project-name">WB / Ozon Reports</div>
+          <span class="project-status project-status-active">работает</span>
+        </div>
+        <div class="project-desc">
+          <ul>
+            <li>Desktop-приложение: финансовая аналитика WB/Ozon — маржа, рентабельность, себестоимости из 1С</li>
+            <li>Несколько организаций, сборка в .exe через PyInstaller</li>
+          </ul>
+        </div>
+        <div class="project-stack">Python · Flet · Pandas · 1С OData · Openpyxl · PyInstaller</div>
+      </article>
+
+      <article class="job inactive">
+        <div class="project-title">
+          <div class="project-name">Pay2Win</div>
+          <span class="project-status project-status-inactive">отключён</span>
+        </div>
+        <div class="project-desc">
+          <ul>
+            <li>Сайт продажи цифровых товаров — 105+ категорий, оплата фиатом и криптой, Telegram/Steam авторизация</li>
+          </ul>
+        </div>
+        <div class="project-stack">Django · aiogram · Celery · PostgreSQL · Docker · Next.js</div>
+      </article>
+
+      <article class="job inactive">
+        <div class="project-title">
+          <div class="project-name">Shroud BOT</div>
+          <span class="project-status project-status-inactive">отключён</span>
+        </div>
+        <div class="project-desc">
+          <ul>
+            <li>Telegram-бот с интеграцией 3X-UI — СБП, карты, Telegram Stars, крипта, еженедельные розыгрыши</li>
+          </ul>
+        </div>
+        <div class="project-stack">FastAPI · aiogram · Celery · PostgreSQL · Alembic</div>
+      </article>
+
+      <article class="job inactive">
+        <div class="project-title">
+          <div class="project-name">Buyer/Parser GIFT</div>
+          <span class="project-status project-status-inactive">отключён</span>
+        </div>
+        <div class="project-desc">
+          <ul>
+            <li>Бот и юзербот для поиска и автопокупки подарков в Telegram через Pyrogram</li>
+          </ul>
+        </div>
+        <div class="project-stack">Asyncio · Pyrogram · Tgcrypto · Loguru</div>
+      </article>
+
+      <article class="job inactive">
+        <div class="project-title">
+          <div class="project-name">Ozon Bot</div>
+          <span class="project-status project-status-inactive">отключён</span>
+        </div>
+        <div class="project-desc">
+          <ul>
+            <li>Автоматизация работы с Ozon — управление сессиями, cookies, парсинг товаров</li>
+          </ul>
+        </div>
+        <div class="project-stack">Python · Selenium</div>
+      </article>
+
+      <article class="job inactive">
+        <div class="project-title">
+          <div class="project-name">T-Invest Bot</div>
+          <span class="project-status project-status-inactive">отключён</span>
+        </div>
+        <div class="project-desc">
+          <ul>
+            <li>Автоматизация биржевой торговли — Tinkoff Invest API, логирование сделок, торговые стратегии</li>
+          </ul>
+        </div>
+        <div class="project-stack">Python · Tinkoff Invest API · Pandas</div>
+      </article>
+    </section>
+
+    <!-- Прочее -->
+    <section id="projects" class="mobile-section">
+      <h2>Прочее</h2>
+
+      <article class="project">
+        <div class="project-title">⚙️ Автоматизация процессов</div>
+        <div class="project-desc">
+          Парсинг сайтов, автоматизация браузеров, обработка файлов, интеграции с 1С, генерация Excel-отчётов.
+        </div>
+        <div class="project-stack">Selenium · Scrapy · Python · 1С · Pandas · openpyxl</div>
+      </article>
+
+      <article class="project">
+        <div class="project-title">🏢 Корпоративные решения</div>
+        <div class="project-desc">
+          Микросервисная архитектура, gRPC, Docker-оркестрация, CI/CD, интеграции с внешними сервисами.
+        </div>
+        <div class="project-stack">FastAPI · gRPC · PostgreSQL · Docker · Celery · Alembic</div>
+      </article>
+
+      <article class="project">
+        <div class="project-title">🛒 Парсеры маркетплейсов</div>
+        <div class="project-desc">
+          Парсинг цен и остатков с Wildberries, Ozon, Яндекс.Маркет и других. Автообновление Excel-отчётов.
+        </div>
+        <div class="project-stack">Selenium · Scrapy · Pandas · openpyxl</div>
+      </article>
+
+      <article class="project">
+        <div class="project-title">📈 Конкурентный анализ</div>
+        <div class="project-desc">
+          Сбор прайс-листов конкурентов, сравнение цен, генерация отчётов — регулярная автоматизация рутины.
+        </div>
+        <div class="project-stack">Python · Pandas · openpyxl · SQLite</div>
+      </article>
+    </section>
+  </div>
+
+  <!-- Мобильная навигация -->
+  <nav class="mobile-nav">
+    <button class="mobile-nav-btn active" data-section="home">
+      <div class="nav-icon">👤</div>
+      <div class="nav-label">Профиль</div>
+    </button>
+    <button class="mobile-nav-btn" data-section="skills">
+      <div class="nav-icon">🛠️</div>
+      <div class="nav-label">Навыки</div>
+    </button>
+    <button class="mobile-nav-btn" data-section="experience">
+      <div class="nav-icon">🚀</div>
+      <div class="nav-label">Проекты</div>
+    </button>
+    <button class="mobile-nav-btn" data-section="projects">
+      <div class="nav-icon">🧩</div>
+      <div class="nav-label">Прочее</div>
+    </button>
+  </nav>
+</body>
+
+</html>
